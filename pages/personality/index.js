@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Layout from 'components/layout'
 
 export default function Personality() {
@@ -8,7 +9,7 @@ export default function Personality() {
         <h1>パーソナリティ<span>Personality</span></h1>
       </div>
       <ul className='page-path'>
-        <li><a href="/">TOP</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
         <li>パーソナリティ</li>
       </ul>
       <section>
@@ -27,9 +28,9 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/Motorman3038" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="https://www.nicovideo.jp/user/8323537" target="_blank">niconico</a></li>
-              <li className='link'><a className='inner' href="http://twpf.jp/Motorman3038" target="_blank">link</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/Motorman3038" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="https://www.nicovideo.jp/user/8323537" target="_blank" rel="noreferrer">niconico</a></li>
+              <li className='link'><a className='inner' href="http://twpf.jp/Motorman3038" target="_blank" rel="noreferrer">link</a></li>
             </ul>
           </li>
           <li>
@@ -44,8 +45,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/ponzulla" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/4819749" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/ponzulla" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/4819749" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>
@@ -61,8 +62,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/daichan1217" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/14926495" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/daichan1217" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/14926495" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>
@@ -78,8 +79,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/michael_peach21" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/2986184" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/michael_peach21" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/2986184" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>
@@ -95,8 +96,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/ochiko5457" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/4345130" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/ochiko5457" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/4345130" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>
@@ -112,8 +113,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/holy_chang" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/1432066" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/holy_chang" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/1432066" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>
@@ -125,7 +126,7 @@ export default function Personality() {
               <h3>りぇこ</h3>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/white322rabbit" target="_blank">Twitter</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/white322rabbit" target="_blank" rel="noreferrer">Twitter</a></li>
               <li className='niconico'><span className='inner'>niconico</span></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
@@ -159,9 +160,9 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/cisuMusic_f" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/60214661" target="_blank">niconico</a></li>
-              <li className='link'><a className='inner' href="http://cisumusicfamiliar.com/" target="_blank">link</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/cisuMusic_f" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/60214661" target="_blank" rel="noreferrer">niconico</a></li>
+              <li className='link'><a className='inner' href="http://cisumusicfamiliar.com/" target="_blank" rel="noreferrer">link</a></li>
             </ul>
           </li>
           <li>
@@ -176,8 +177,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/nonnda_905" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/55631150" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/nonnda_905" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/55631150" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>
@@ -193,8 +194,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/sad_aki" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/53629928" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/sad_aki" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/53629928" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>
@@ -216,9 +217,9 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/AKIBAJIN" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/789439" target="_blank">niconico</a></li>
-              <li className='link'><a className='inner' href="http://kandabuhin.web.fc2.com/" target="_blank">link</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/AKIBAJIN" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/789439" target="_blank" rel="noreferrer">niconico</a></li>
+              <li className='link'><a className='inner' href="http://kandabuhin.web.fc2.com/" target="_blank" rel="noreferrer">link</a></li>
             </ul>
           </li>
           <li>
@@ -270,8 +271,8 @@ export default function Personality() {
               </ul>
             </div>
             <ul className='link-list'>
-              <li className='twitter'><a className='inner' href="https://twitter.com/Waterfox_skjp" target="_blank">Twitter</a></li>
-              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/8719254" target="_blank">niconico</a></li>
+              <li className='twitter'><a className='inner' href="https://twitter.com/Waterfox_skjp" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li className='niconico'><a className='inner' href="http://www.nicovideo.jp/user/8719254" target="_blank" rel="noreferrer">niconico</a></li>
               <li className='link'><span className='inner'>link</span></li>
             </ul>
           </li>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Layout from 'components/layout'
 
 export default function PastProgram() {
@@ -8,8 +9,8 @@ export default function PastProgram() {
         <h1>過去の番組<span>Past Program</span></h1>
       </div>
       <ul className="page-path">
-        <li><a href="/">TOP</a></li>
-        <li><a href="/timetable/">放送番組</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
+        <li><Link href='/timetable/'><a>放送番組</a></Link></li>
         <li>過去の番組</li>
       </ul>
       <section>
@@ -124,12 +125,12 @@ export default function PastProgram() {
             </div>
           </li>
         </ul>
-        <p className="btn-default center"><a href="/timetable/">現在放送中の番組を見る</a></p>
+        <p className="btn-default center"><Link href='/timetable/'><a>現在放送中の番組を見る</a></Link></p>
       </section>
       <section>
         <h2>アーカイブ　Archive</h2>
         <p>一部の過去の番組は以下のページからダウンロード・視聴することができます。</p>
-        <p className="btn-default center"><a href="/archive/">アーカイブページはこちら</a></p>
+        <p className="btn-default center"><Link href='/archive/'><a>アーカイブページはこちら</a></Link></p>
       </section>
     </>
   )

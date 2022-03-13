@@ -12,7 +12,7 @@ export default function About() {
         <h1>概要<span>About</span></h1>
       </div>
       <ul className="page-path">
-        <li><a href="/">TOP</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
         <li>概要</li>
       </ul>
       <section>

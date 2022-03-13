@@ -9,7 +9,7 @@ export default function Timetable() {
         <h1>放送番組<span>Timetable</span></h1>
       </div>
       <ul className='page-path'>
-        <li><a href="/">TOP</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
         <li>放送番組</li>
       </ul>
       <section>

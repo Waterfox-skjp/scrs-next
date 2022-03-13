@@ -38,20 +38,20 @@ export default function TOP() {
         <section>
           <h2 className='no-margin'>トピックス　Topix</h2>
           <ul className='topix-list'>
-            <li><p className='date'>2019/06/02</p><p className='text'>アーカイブの配信を停止しました&nbsp;&nbsp;<a href="https://twitter.com/SCRS802/status/1135154166064590848" target="_self">詳細はこちら</a></p></li>
+            <li><p className='date'>2019/06/02</p><p className='text'>アーカイブの配信を停止しました&nbsp;&nbsp;<a href="https://twitter.com/SCRS802/status/1135154166064590848">詳細はこちら</a></p></li>
             <li><p className='date'>2017/04/28</p><p className='text'>佐藤明子のぐだふたぬ～んフィーバー 放送開始</p></li>
-            <li><p className='date'>2017/03/05</p><p className='text'>昭和歌謡のしらべ produced by 直也&nbsp;&nbsp;<a href="https://ssl.form-mailer.jp/fms/de9e17f5455891" target="_blank">詳細はこちら</a></p></li>
+            <li><p className='date'>2017/03/05</p><p className='text'>昭和歌謡のしらべ produced by 直也&nbsp;&nbsp;<a href="https://ssl.form-mailer.jp/fms/de9e17f5455891" target="_blank" rel="noreferrer">詳細はこちら</a></p></li>
             <li><p className='date'>2017/01/21</p><p className='text'>きんぎょ日和 放送開始</p></li>
-            <li><p className='date'>2016/10/23</p><p className='text'>ライブ at 池袋BigBanBox&nbsp;&nbsp;<a href="https://ssl.form-mailer.jp/fms/de9e17f5455891" target="_blank">詳細はこちら</a></p></li>
+            <li><p className='date'>2016/10/23</p><p className='text'>ライブ at 池袋BigBanBox&nbsp;&nbsp;<a href="https://ssl.form-mailer.jp/fms/de9e17f5455891" target="_blank" rel="noreferrer">詳細はこちら</a></p></li>
             <li><p className='date'>2016/09/28</p><p className='text'>トンちゃんとホリちゃんのHitMe！ 放送開始</p></li>
-            <li><p className='date'>2016/07/21</p><p className='text'>ライブ with cisuMusic familiar&nbsp;&nbsp;<a href="https://ws.formzu.net/fgen/S19672653/" target="_blank">詳細はこちら</a></p></li>
-            <li><p className='date'>2016/07/09</p><p className='text'>夏の公開生放送2016の開催を発表&nbsp;&nbsp;<a href="/event/2016-summer.html" target="_self">詳細はこちら</a></p></li>
+            <li><p className='date'>2016/07/21</p><p className='text'>ライブ with cisuMusic familiar&nbsp;&nbsp;<a href="https://ws.formzu.net/fgen/S19672653/" target="_blank" rel="noreferrer">詳細はこちら</a></p></li>
+            <li><p className='date'>2016/07/09</p><p className='text'>夏の公開生放送2016の開催を発表</p></li>
             <li><p className='date'>2015/12/01</p><p className='text'>サーバーを移転しました</p></li>
-            <li><p className='date'>2015/07/15</p><p className='text'>夏の大イベント2015の開催を発表&nbsp;&nbsp;<a href="/event/2015-summer.html" target="_self">詳細はこちら</a></p></li>
+            <li><p className='date'>2015/07/15</p><p className='text'>夏の大イベント2015の開催を発表</p></li>
             <li><p className='date'>2014/09/20</p><p className='text'>ばんとこたが語る機材の歴史公開</p></li>
             <li><p className='date'>2014/08/24</p><p className='text'>ニコニコばんばん！第200回突入</p></li>
             <li><p className='date'>2014/06/29</p><p className='text'>WEBサイトリニューアル</p></li>
-            <li><p className='date'>2014/06/22</p><p className='text'>夏の大イベント2014の開催を発表&nbsp;&nbsp;<a href="/event/2014-summer.html" target="_self">詳細はこちら</a></p></li>
+            <li><p className='date'>2014/06/22</p><p className='text'>夏の大イベント2014の開催を発表</p></li>
             <li><p className='date'>2013/06/03</p><p className='text'>ニコニコばんばん150回記念放送について</p></li>
             <li><p className='date'>2013/05/12</p><p className='text'>STAFF募集のお知らせ</p></li>
             <li><p className='date'>2010/09/17</p><p className='text'>Podcast更新</p></li>
@@ -63,7 +63,7 @@ export default function TOP() {
           <ul className='info-list horizontal'>
             <li>
               <div className='img-area'>
-                <a href="/archive/"><Image src='/assets/images/top/bnr-archives.png' width={250} height={70} alt='アーカイブ配信中！' quality={85} /></a>
+                <Link href='/archive/'><a><Image src='/assets/images/top/bnr-archives.png' width={250} height={70} alt='アーカイブ配信中！' quality={85} /></a></Link>
               </div>
               <div className='text-area'>
                 <h3>放送アーカイブ配信中！</h3>
@@ -72,7 +72,7 @@ export default function TOP() {
             </li>
             <li>
               <div className='img-area'>
-                <a href="http://kandabuhin.web.fc2.com/" target="_blank"><Image src='/assets/images/top/bnr-ntk.png' width={250} height={70} alt='ニコ生TimeKeeper現在開発中！' quality={85} /></a>
+                <a href="http://kandabuhin.web.fc2.com/" target="_blank" rel="noreferrer"><Image src='/assets/images/top/bnr-ntk.png' width={250} height={70} alt='ニコ生TimeKeeper現在開発中！' quality={85} /></a>
               </div>
               <div className='text-area'>
                 <h3>ニコ生TimeKeeper現在開発中！</h3>
@@ -105,7 +105,7 @@ export default function TOP() {
           <h2>ポッドキャスト　Podcast</h2>
           <ul className='podcast-list'>
             <li>
-              <a href="https://drive.google.com/open?id=10kVcmUplPHUnPp7dCP-zFTc4iml5EK3j" download="2010-07.mp3" target="_blank">
+              <a href="https://drive.google.com/open?id=10kVcmUplPHUnPp7dCP-zFTc4iml5EK3j" download="2010-07.mp3" target="_blank" rel="noreferrer">
                 <div className='img-area'><Image src='/assets/images/top/icon-info.png' width={65} height={65} alt='インフォメーションアイコン' quality={85} /></div>
                 <div className='text-area'>
                   <p className='title'>第4回Podcast</p>
@@ -114,7 +114,7 @@ export default function TOP() {
               </a>
             </li>
             <li>
-              <a href="https://drive.google.com/open?id=1zy6mtZrKSdfyntChRTnNdFwiHa0KnHJY" download="2010-05.mp3" target="_blank">
+              <a href="https://drive.google.com/open?id=1zy6mtZrKSdfyntChRTnNdFwiHa0KnHJY" download="2010-05.mp3" target="_blank" rel="noreferrer">
                 <div className='img-area'><Image src='/assets/images/top/icon-info.png' width={65} height={65} alt='インフォメーションアイコン' quality={85} /></div>
                 <div className='text-area'>
                   <p className='title'>第3回Podcast</p>
@@ -123,7 +123,7 @@ export default function TOP() {
               </a>
             </li>
             <li>
-              <a href="https://drive.google.com/open?id=1mzP8jNxORTu3GELaI9jQzpbXrpTxRKnz" download="natureworld01.mp3" target="_blank">
+              <a href="https://drive.google.com/open?id=1mzP8jNxORTu3GELaI9jQzpbXrpTxRKnz" download="natureworld01.mp3" target="_blank" rel="noreferrer">
                 <div className='img-area'><Image src='/assets/images/top/icon-info.png' width={65} height={65} alt='インフォメーションアイコン' quality={85} /></div>
                 <div className='text-area'>
                   <p className='title'>第1回YOKO Visage<br/>NATURE WORLD</p>
@@ -132,7 +132,7 @@ export default function TOP() {
               </a>
             </li>
             <li>
-              <a href="https://drive.google.com/open?id=1Uaa9zFCJQe-7BHQ4ffkmjJTx2KiYKK6n" download="2010-04.mp3" target="_blank">
+              <a href="https://drive.google.com/open?id=1Uaa9zFCJQe-7BHQ4ffkmjJTx2KiYKK6n" download="2010-04.mp3" target="_blank" rel="noreferrer">
                 <div className='img-area'><Image src='/assets/images/top/icon-info.png' width={65} height={65} alt='インフォメーションアイコン' quality={85} /></div>
                 <div className='text-area'>
                   <p className='title'>第2回Podcast</p>
@@ -141,7 +141,7 @@ export default function TOP() {
               </a>
             </li>
             <li>
-              <a href="https://drive.google.com/open?id=1GeFBgkSfoj5dRFQfwRf0R5E78t6qmIxq" download="2010-03.mp3" target="_blank">
+              <a href="https://drive.google.com/open?id=1GeFBgkSfoj5dRFQfwRf0R5E78t6qmIxq" download="2010-03.mp3" target="_blank" rel="noreferrer">
                 <div className='img-area'><Image src='/assets/images/top/icon-info.png' width={65} height={65} alt='インフォメーションアイコン' quality={85} /></div>
                 <div className='text-area'>
                   <p className='title'>第1回Podcast</p>
@@ -183,37 +183,37 @@ export default function TOP() {
           <h2>スポンサー</h2>
           <ul className='bnr-list'>
             <li>
-              <a href="http://com.nicovideo.jp/community/co347665" target="_blank">
+              <a href="http://com.nicovideo.jp/community/co347665" target="_blank" rel="noreferrer">
                 <Image src='/assets/images/top/bnr/bnr-niconama.png' width={200} height={50} alt='ニコニコ生放送' quality={85} />
               </a>
             </li>
             <li>
-              <a href="http://twitcasting.tv/scrs802" target="_blank">
+              <a href="http://twitcasting.tv/scrs802" target="_blank" rel="noreferrer">
                 <Image src='/assets/images/top/bnr/bnr-twicas.png' width={200} height={50} alt='TwitCasting' quality={85} />
               </a>
             </li>
             <li>
-              <a href="http://kandabuhin.web.fc2.com/" target="_blank">
+              <a href="http://kandabuhin.web.fc2.com/" target="_blank" rel="noreferrer">
                 <Image src='/assets/images/top/bnr/bnr-kanda.png' width={200} height={50} alt='神田部品' quality={85} />
               </a>
             </li>
             <li>
-              <a href="http://sylph.lib.net/trainsim/" target="_blank">
+              <a href="http://sylph.lib.net/trainsim/" target="_blank" rel="noreferrer">
                 <Image src='/assets/images/top/bnr/bnr-1heisoku.png' width={200} height={50} alt='第一閉塞進行！' quality={85} />
               </a>
             </li>
             <li>
-              <a href="http://cisumusicfamiliar.com/" target="_blank">
+              <a href="http://cisumusicfamiliar.com/" target="_blank" rel="noreferrer">
                 <Image src='/assets/images/top/bnr/bnr-cisuMf.png' width={200} height={50} alt='cisuMusic familiar' quality={85} />
               </a>
             </li>
             <li>
-              <a href="http://www.train-tito.net/" target="_blank">
+              <a href="http://www.train-tito.net/" target="_blank" rel="noreferrer">
                 <Image src='/assets/images/top/bnr/bnr-tdats.png' width={200} height={50} alt='Train Drive ATS' quality={85} />
               </a>
             </li>
             <li>
-              <a href="http://progloria2015.jimdo.com/" target="_blank">
+              <a href="http://progloria2015.jimdo.com/" target="_blank" rel="noreferrer">
                 <Image src='/assets/images/top/bnr/bnr-gloria.png' width={200} height={50} alt='Production GLORIA' quality={85} />
               </a>
             </li>
