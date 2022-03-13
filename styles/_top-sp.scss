@@ -1,0 +1,140 @@
+.l-container.is-top {
+  main { display: block;
+    p { @include vmin(24); }
+  }
+
+  .contents { padding: 0; width: 100%;
+    h2 {
+      margin-bottom: px(30,576);
+      padding: 1.4% 1.4% 1.4% 10%;
+      @include border_width(2);
+      @include vmin(26);
+      &:before {
+        left: .6em;
+        background: url(/assets/images/common/ttl-icon.svg) no-repeat;
+        background-size: 100% auto;
+      }
+    }
+    section { margin: 0 auto px(60); padding: 0 5%; width: 100%;
+      &.bg-color { padding-top: px(60,576); padding-bottom: px(60,576); background: $light_color; }
+    }
+    .slider-wrap { margin-bottom: px(30,576); }
+    .slider {
+      .slick-arrow {
+        top: calc(50% - 4vmin);
+        width: 8vmin;
+        height: 8vmin;
+        &:before { @include vmin(30); }
+        &.slick-prev { left: 5%; }
+        &.slick-next { right: 5%; }
+      }
+      .slick-slide img { width: 100%; }
+      .slick-dots { margin-top: px(10);
+        li { padding: 1.3vmin; }
+        button {
+          &:before { width: 3vmin; height: 3vmin; }
+        }
+      }
+    }
+    .topix-list { padding-top: 2%; height: 50vmin;
+      li { padding: 3% 0; flex-direction: column;
+        &:not(:last-child) { @include border_width(2,bottom); }
+        .date {
+          padding: .5em;
+          display: inline-block;
+          width: auto;
+          line-height: 1;
+          @include vmin(18);
+        }
+        .text { margin-top: 1.5%; margin-left: 0; width: 100%; }
+      }
+    }
+    .info-list { width: 100%;
+      & + .info-list { margin-top: px(60); }
+      li {
+        .text-area {
+          h3 { margin-bottom: 1.5%; @include vmin(24); }
+        }
+      }
+      &.horizontal {
+        li { width: 100%;
+          .img-area { margin-bottom: 2%; }
+          &:nth-child(2n) { margin-left: 0; }
+          &:not(:last-child) { margin-bottom: px(30,576); }
+        }
+      }
+      &.vertical {
+        li {
+          .img-area { margin-right: 5%; width: 21%; }
+          .text-area { width: 74%; }
+          &:not(:last-child) { margin-bottom: px(30,576); }
+        }
+      }
+    }
+    .podcast-list { display: block; width: 100%;
+      li {
+        @include border_width(2);
+        width: 100%;
+        height: auto;
+        &:nth-child(2n) { margin-left: 0; }
+        &:nth-child(n+3) { margin-top: 0; }
+        &:not(:last-child) { margin-bottom: px(15,576); }
+        .img-area { margin-right: 5%; width: 23%; }
+        .text-area { width: 72%;
+          .title { margin-bottom: px(10); }
+          .date { @include vmin(16); }
+        }
+        &:after {
+          bottom: 8%;
+          right: 2.5%;
+          @include vmin(34);
+        }
+        &:before {
+          bottom: 13.5%;
+          right: 4.5%;
+          width: 30%;
+          height: 40%;
+        }
+      }
+      a { padding: 5%; }
+    }
+  }
+
+  .sidebar {
+    padding: 0;
+    width: 100%;
+    background: none;
+    h2 {
+      margin-bottom: px(30,576);
+      padding: .3em .3em .3em 2.2em;
+      @include vmin(26);
+      text-align: left;
+      &:before,&:after {
+        background: url(/assets/images/common/ttl-icon.svg) no-repeat;
+        background-size: 100% auto;
+      }
+      &:before { left: .6em; }
+      &:after { display: none; }
+    }
+    section { margin-bottom: px(60); padding: 0 5%;
+      &.bg-color { padding-top: px(60,576); padding-bottom: px(60,576); background: $light_color; }
+    }
+    .bnr-list { display: flex; flex-wrap: wrap;
+      li { width: 49%;
+        &:nth-child(2n) { margin-left: 2%; }
+        &:nth-child(n+3) { margin-top: 2%; }
+        &:not(:last-child) { margin-bottom: 0; }
+      }
+    }
+    .share-list {
+      li {
+        border-radius: 1.5vmin;
+        width: 12%;
+        height: auto;
+        &:not(:last-child) { margin-right: px(30,576); }
+      }
+    }
+  }
+
+  .widget { display: none; }
+}
