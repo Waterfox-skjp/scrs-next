@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from 'components/layout'
 
 export default function Contact() {
@@ -7,7 +8,7 @@ export default function Contact() {
         <h1>お問い合わせ<span>contact</span></h1>
       </div>
       <ul className='page-path'>
-        <li><a href='/'>TOP</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
         <li>お問い合わせ</li>
       </ul>
       <section>

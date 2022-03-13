@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from 'components/layout'
 
 export default function Themasong() {
@@ -7,8 +8,8 @@ export default function Themasong() {
         <h1>テーマソング<span>Theme Song</span></h1>
       </div>
       <ul className='page-path'>
-        <li><a href="/">TOP</a></li>
-        <li><a href="/about/">概要</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
+        <li><Link href='/about/'><a>概要</a></Link></li>
         <li>テーマソング</li>
       </ul>
       <section>

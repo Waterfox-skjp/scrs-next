@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/link'
 import Layout from 'components/layout'
 
 export default function Request() {
@@ -11,7 +11,7 @@ export default function Request() {
         <h1>リクエスト<span>Request</span></h1>
       </div>
       <ul className="page-path">
-        <li><a href="/">TOP</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
         <li>リクエスト</li>
       </ul>
       <section>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from 'components/layout'
 
 export default function Archive() {
@@ -7,7 +8,7 @@ export default function Archive() {
         <h1>アーカイブ<span>Archive</span></h1>
       </div>
       <ul className='page-path'>
-        <li><a href='/'>TOP</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
         <li>アーカイブ</li>
       </ul>
       <section>

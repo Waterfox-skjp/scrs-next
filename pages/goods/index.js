@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Layout from 'components/layout'
 
 export default function Goods() {
@@ -8,7 +9,7 @@ export default function Goods() {
         <h1>グッズ<span>Goods</span></h1>
       </div>
       <ul className='page-path'>
-        <li><a href='/'>TOP</a></li>
+        <li><Link href='/'><a>TOP</a></Link></li>
         <li>グッズ</li>
       </ul>
       <section>
