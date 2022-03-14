@@ -4,7 +4,7 @@ import LayoutPr from 'components/layout_pr'
 export default function Satomoters() {
   return (
     <>
-      <div className="img-wrap">
+      <div className='img-wrap'>
         <Image src='/assets/images/pr/pr-satomoters.jpg' width={900} height={675} alt='佐藤自動車' quality={85} />
       </div>
     </>

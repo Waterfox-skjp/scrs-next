@@ -14,7 +14,7 @@ export default function Footer() {
           <li><Link href='/contact/'><a>お問い合わせ</a></Link></li>
         </ul>
       </nav>
-      <p>Copyright (C) 2005-2019 SunCityRadioStation All Rights Reserved. <br/>design by SCRS Staff</p>
+      <p>Copyright (C) 2005-2022 SunCityRadioStation All Rights Reserved. <br/>design by SCRS Staff</p>
     </footer>
   )
 }

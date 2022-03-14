@@ -15,7 +15,7 @@ export default function Goods() {
       <section>
         <h2>キャンペーン　Campaign</h2>
         <div className='poster-wrap'>
-          <a href='/images/goods/goods2017.png'>
+          <a href='/assets/images/goods/goods2017-min.png'>
             <Image src='/assets/images/goods/goods2017-min.png' width={640} height={819} alt='特製グッズ プレゼントキャンペーン' />
           </a>
         </div>
