@@ -7,17 +7,17 @@ export default function Request() {
   }
   return (
     <>
-      <div className="page-ttl">
+      <div className='page-ttl'>
         <h1>リクエスト<span>Request</span></h1>
       </div>
-      <ul className="page-path">
+      <ul className='page-path'>
         <li><Link href='/'><a>TOP</a></Link></li>
         <li>リクエスト</li>
       </ul>
       <section>
         <h2>リクエストフォーム　Requestform</h2>
-        <div className="request-form">
-          <iframe src="https://ws.formzu.net/dist/S62895556/" onLoad={onloadIframe}></iframe>
+        <div className='request-form'>
+          <iframe src='https://ws.formzu.net/dist/S62895556/' onLoad={onloadIframe}></iframe>
         </div>
       </section>
     </>

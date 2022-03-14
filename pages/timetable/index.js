@@ -14,7 +14,7 @@ export default function Timetable() {
       </ul>
       <section>
         <h2>放送中の番組　NowOnAir</h2>
-        <div id="app"></div>
+        <div id='app'></div>
       </section>
       <section>
         <h2>放送番組一覧　Timetable</h2>
@@ -30,7 +30,7 @@ export default function Timetable() {
             <li>
               <h3>水曜日<span>Wednesday</span></h3>
               <ul>
-                <li data-mfp="/timetable/hitme.html" data-effect="mfp-zoom-in" className='ajax-popup-link'>
+                <li data-mfp='/timetable/hitme.html' data-effect='mfp-zoom-in' className='ajax-popup-link'>
                   <Image src='/assets/images/timetable/logo-hitme.png' width={159} height={51} alt='トンちゃんとホリちゃんのHitMe！！' />
                 </li>
               </ul>
@@ -44,10 +44,10 @@ export default function Timetable() {
             <li>
               <h3>土曜日<span>Saturday</span></h3>
               <ul>
-                <li data-mfp="/timetable/kingyo.html" data-effect="mfp-zoom-in" className='ajax-popup-link'>
+                <li data-mfp='/timetable/kingyo.html' data-effect='mfp-zoom-in' className='ajax-popup-link'>
                   <Image src='/assets/images/timetable/logo-kingyo.png' width={159} height={83} alt='きんぎょ日和' />
                 </li>
-                <li data-mfp="/timetable/nicoban.html" data-effect="mfp-zoom-in" className='ajax-popup-link'>
+                <li data-mfp='/timetable/nicoban.html' data-effect='mfp-zoom-in' className='ajax-popup-link'>
                   <Image src='/assets/images/timetable/logo-nicoban.png' width={159} height={69} alt='ニコニコばんばん！' />
                 </li>
               </ul>
@@ -62,7 +62,7 @@ export default function Timetable() {
             <li>
               <h3>不定期<span>Occasionally</span></h3>
               <ul>
-                <li data-mfp="/timetable/burst.html" data-effect="mfp-zoom-in" className='ajax-popup-link'>
+                <li data-mfp='/timetable/burst.html' data-effect='mfp-zoom-in' className='ajax-popup-link'>
                   <Image src='/assets/images/timetable/logo-burst.png' width={160} height={45} alt='Radio BURST' />
                 </li>
               </ul>

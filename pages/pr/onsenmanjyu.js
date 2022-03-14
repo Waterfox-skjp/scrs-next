@@ -4,7 +4,7 @@ import LayoutPr from 'components/layout_pr'
 export default function Onsenmanjyu() {
   return (
     <>
-      <div className="img-wrap">
+      <div className='img-wrap'>
         <Image src='/assets/images/pr/pr-onsenmanjyu.jpg' width={900} height={675} alt='温泉饅頭本舗' quality={85} />
       </div>
     </>

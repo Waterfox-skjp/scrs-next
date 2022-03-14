@@ -332,19 +332,21 @@
     }
     .btn-regular-ch {
       border: 1px solid #000;
+      padding: 0;
+      width: 100%;
       line-height: .9;
       color: #FFF;
       background: linear-gradient(to bottom, #888, #000);
-      font-size: 20px;
+      font-size: 0;
       cursor: pointer;
       text-align: center;
       &:after {
         display: inline-block;
         content: "\f078";
+        font-size: 20px;
         @include fa_icon();
         transition: .3s;
       }
-      &.open:after { transform: rotate(-180deg); }
     }
     .bnr-list {
       li { background: #FFF; line-height: 0;
