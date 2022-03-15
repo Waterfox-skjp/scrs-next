@@ -4,7 +4,7 @@ import { Timeline } from 'react-twitter-widgets'
 import Iframe from 'react-iframe'
 import { Autoplay, Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { useState } from 'react';
+import { useState } from 'react'
 import Layout from 'components/layout'
 import Dropdown from 'components/regular_channel'
 import 'swiper/css'
@@ -170,7 +170,7 @@ export default function TOP() {
             </li>
           </ul>
           <Dropdown open={modalFlag} />
-          <button className={'btn-regular-ch'} onClick={handleToggle}>Open</button>
+          <button className={`btn-regular-ch ${modalFlag ? 'open' : ''}`} onClick={handleToggle}>Open</button>
         </section>
         <section className='bg-color'>
           <h2>スポンサー</h2>

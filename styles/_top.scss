@@ -347,6 +347,7 @@
         @include fa_icon();
         transition: .3s;
       }
+      &.open:after { transform: rotate(-180deg); }
     }
     .bnr-list {
       li { background: #FFF; line-height: 0;

@@ -1,22 +1,28 @@
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Header() {
   const router = useRouter()
+
+  const [navFlag, setNavFlag] = useState(false)
+  const navToggle = () => {
+    setNavFlag(!navFlag)
+  }
   return (
     <header>
       <div className='inner'>
         <h1 className='logo'>
           <Link href='/'><a><Image src='/assets/images/common/logo.png' width={200} height={79} alt='Sun City Radio Station' /></a></Link>
         </h1>
-        <div id='js-sp-nav' className='btn-sp-nav'>
+        <button id='js-sp-nav' className={`btn-sp-nav ${navFlag ? 'active' : ''}`} onClick={navToggle}>
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
-      <nav>
+      <nav className={navFlag ? 'open' : ''}>
         <ul>
           <li className={router.pathname == '/' ? 'current' : ''}><Link href='/'><a>TOP</a></Link></li>
           <li className={router.pathname.startsWith('/timetable') ? 'current' : ''}><Link href='/timetable/'><a>放送番組</a></Link></li>
