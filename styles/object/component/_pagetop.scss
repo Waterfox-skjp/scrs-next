@@ -1,0 +1,23 @@
+@use "../../global/" as g;
+
+.c-pagetop {
+  position: fixed;
+	border-radius: 50%;
+	bottom: -85px;
+	right: 30px;
+	opacity: .5;
+  width: 60px;
+  height: 60px;
+  color: #FFF;
+	background: g.$primary_color;
+	text-align: center;
+	transition: bottom .5s, opacity .3s;
+	cursor: pointer;
+	i { line-height: 55px; font-size: 40px; }
+	&:hover { opacity: 1; }
+  &.is-active { bottom: 30px; }
+}
+
+@media only screen and (max-width: g.$breakpoint) {
+  .c-pagetop { display: none; }
+}

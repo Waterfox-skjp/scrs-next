@@ -1,0 +1,5 @@
+@use "../global/" as g;
+
+@media only screen and (max-width: g.$breakpoint) {
+  .l-main { padding-top: g.px(140); }
+}

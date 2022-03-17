@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { useEffect } from "react"
+import { useEffect } from 'react'
 import '../styles/style.scss'
 
 function MyApp({ Component, pageProps }) {
@@ -9,15 +9,14 @@ function MyApp({ Component, pageProps }) {
       page_path: url,
     })
   }
-
   useEffect(() => {
     router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events])
-
   const getLayout = Component.getLayout || ((page) => page)
+
   return getLayout(<Component {...pageProps} />)
 }
 

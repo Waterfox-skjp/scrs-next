@@ -1,10 +1,8 @@
 import Link from 'next/link'
 import Layout from 'components/layout'
+import Iframe from 'react-iframe'
 
 export default function Request() {
-  const onloadIframe = () => {
-    if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/) !== null && formzuInitialLoad == true) this.scrollIntoView(true)
-  }
   return (
     <>
       <div className='page-ttl'>
@@ -17,7 +15,7 @@ export default function Request() {
       <section>
         <h2>リクエストフォーム　Requestform</h2>
         <div className='request-form'>
-          <iframe src='https://ws.formzu.net/dist/S62895556/' onLoad={onloadIframe}></iframe>
+          <Iframe src='https://ws.formzu.net/dist/S62895556/'></Iframe>
         </div>
       </section>
     </>

@@ -91,6 +91,7 @@ export default function ChannelModal({id}) {
     }
   ]
   const channel = channelList.find((data) => data.id === id)
+
   return (
     <li>
       <div onClick={() => setIsOpen(true)}>
@@ -100,14 +101,14 @@ export default function ChannelModal({id}) {
         isOpen={modalIsOpen}
         onRequestClose={() => setIsOpen(false)}
         overlayClassName={{
-          base: "c-overlay",
-          afterOpen: "is-after",
-          beforeClose: "is-before"
+          base: 'c-overlay',
+          afterOpen: 'is-after',
+          beforeClose: 'is-before'
         }}
         className={{
-          base: "c-modal",
-          afterOpen: "is-after",
-          beforeClose: "is-before"
+          base: 'c-modal',
+          afterOpen: 'is-after',
+          beforeClose: 'is-before'
         }}
         closeTimeoutMS={400}
       >
