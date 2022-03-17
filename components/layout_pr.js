@@ -34,7 +34,7 @@ export default function LayoutPr({ children, title, description }) {
         <meta name='robots' content='noindex, nofollow' />
       </Head>
       <div className='l-container is-pr'>
-        <main>{children}</main>
+        <main className='l-main'>{children}</main>
       </div>
     </>
   )

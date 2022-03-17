@@ -1,0 +1,224 @@
+@use "../global/" as g;
+
+.l-header { position: relative; z-index: 2;
+  &__visual {
+		padding: 10px 30px;
+		height: 100px;
+		background: url("/assets/images/common/bg-header.png") no-repeat right bottom;
+  }
+  &__logo { width: 200px;
+    &-link { display: block; }
+  }
+  &__nav {
+    &-list {
+			display: flex;
+			box-shadow: 0px 3px 3px 1px rgba(0,0,0,.4);
+			background: linear-gradient(to bottom, #f9f9f9 0%,#e1e1e1 50%,#cacaca 51%,#e6e6e6 100%);
+			font-size: 12px;
+			text-align: center;
+      .l-header__nav-item {
+        &:not(:last-child) { border-right: 1px solid #AAA; }
+      }
+    }
+    &-item {
+			position: relative;
+			border-top: 1px solid #AAA;
+			border-bottom: 1px solid #AAA;
+			width: 100%;
+			transition: border .3s;
+			&:before {
+				display: block;
+				position: absolute;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				content: "";
+				background: linear-gradient(to bottom, #ffb55f 0%,#ff7a0f 50%,#f95e00 51%,#ff6702 100%);
+				opacity: 0;
+				transition: opacity .3s;
+			}
+			&:hover,&.is-current {
+				border-top: 1px solid #e85400;
+				border-bottom: 1px solid #e85400;
+				.l-header__nav-link { color: #FFF; }
+				&:before { opacity: 1; }
+				&:not(:last-child) { border-right: 1px solid #e85400; }
+			}
+    }
+    &-link {
+      padding: 1em;
+      display: block;
+      position: relative;
+      z-index: 2;
+      line-height: 1;
+      color: #262626;
+      font-weight: bold;
+      transition: color .3s;
+    }
+  }
+  &__hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: g.$breakpoint) {
+  .l-header {
+    position: fixed;
+    top: 0;
+    z-index: 997;
+    width: 100%;
+    background: #FFF;
+    &__visual {
+      padding: g.px(23) g.px(38);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 999;
+      height: auto;
+      background: none;
+      &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: g.get_vw(5);
+        content: "";
+        background: g.$primary_color;
+      }
+    }
+    &__logo { width: g.px(234,674); }
+    &__nav {
+      position: fixed;
+      top: 0;
+      z-index: 998;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: #FFF;
+      transform: translateY(-100%);
+      transition: .5s;
+      &:after {
+        display: block;
+        width: 100%;
+        height: 16vmin;
+        content: "";
+        background: url("/assets/images/common/bg-sp-nav.svg") no-repeat center center;
+        background-size: 100% auto;
+      }
+      &-list {
+        padding: g.px(139) g.px(20) 0;
+        display: block;
+        box-shadow: none;
+        background: g.$light_color;
+        @include g.fz_vw(26);
+        .l-header__nav-item {
+          &:not(:last-child) {
+            border-right: none;
+            border-bottom-color: #FFF;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+          }
+        }
+      }
+      &-item {
+        position: relative;
+        border-top: none;
+        border-bottom: none;
+        width: 100%;
+        &:before { display: none; }
+        &:hover,&.is-current {
+          border-top: none;
+          border-bottom: none;
+          .l-header__nav-link { color: g.$primary_color; }
+          &:not(:last-child) { border-right: none; }
+        }
+      }
+      &-link { padding: g.px(47) 0; color: g.$primary_color; }
+      &.is-open { opacity: 1; transform: translateY(0);
+        .l-header__nav-item {
+          $i: 1;
+          $delay: 0.15;
+          @while $i <= 7 {
+            &:nth-child(#{$i}) .l-header__nav-link {
+              animation-delay: #{$delay}s;
+            }
+            $i: $i + 1;
+            $delay: $delay + 0.15;
+          }
+        }
+        .l-header__nav-link {
+          opacity: 0;
+          transform: translateX(-2em);
+          animation-name: navAni;
+          animation-duration: .5s;
+          animation-timing-function: ease;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+    &__hamburger {
+      display: block;
+      position: relative;
+      z-index: 1002;
+      width: g.px(60,580);
+      cursor: pointer;
+      transition: .3s;
+      background: none;
+      border: none;
+      padding: 0;
+      span {
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: .4vw;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1.1vw;
+        background: g.$primary_color;
+        transition: .4s;
+        &:nth-of-type(1) { top: 15%; left: 50%; transform: translate(-50%); animation: line-top-off .5s forwards; }
+        &:nth-of-type(2) { top: calc(50% - .55vw); left: 50%; transform: translate(-50%); transition: opacity .5s; opacity: 1; }
+        &:nth-of-type(3) { bottom: 15%; left: 50%; transform: translate(-50%); animation: line-bottom-off .5s forwards; }
+      }
+      &:before { padding-top: 100%; display: block; content: ""; }
+      &.is-active {
+        span {
+          &:nth-of-type(1) { animation: line-top-on .5s forwards; }
+          &:nth-of-type(2) { opacity: 0; }
+          &:nth-of-type(3) { animation: line-bottom-on .5s forwards; }
+        }
+      }
+    }
+    &.is-fixed { box-shadow: 0px .3em .5em 0 rgba(0,0,0,.2); }
+  }
+}
+
+@keyframes navAni {
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes line-top-on {
+  0% { top: 15%; transform: translate(-50%); }
+  50% {  top: 50%; transform: translate(-50%); }
+  100% { top: 50%; transform: translate(-50%) rotate(45deg); }
+}
+
+@keyframes line-bottom-on {
+  0% { bottom: 15%; transform: translate(-50%); }
+  50% { bottom: 50%; transform: translate(-50%); }
+  100% { top: 50%; bottom: auto; transform: translate(-50%) rotate(-45deg); }
+}
+
+@keyframes line-top-off {
+  0% { top: 50%; transform: translate(-50%) rotate(45deg); }
+  50% { top: 50%; transform: translate(-50%); }
+  100% { top: 15%; transform: translate(-50%); }
+}
+
+@keyframes line-bottom-off {
+  0% { top: 50%; transform: translate(-50%) rotate(-45deg); }
+  50% { top: auto; bottom: 50%; transform: translate(-50%); }
+  100% { bottom: 15%; transform: translate(-50%); }
+}

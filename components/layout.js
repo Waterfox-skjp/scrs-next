@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageTop from '../components/pagetop'
 
 export default function Layout({ children, title, description }) {
   description = '「より本物に!」をコンセプトにインターネットラジオ局、Sun City Radio Stationが2005年にスタート。おかげさまで14年目に突入。Sun City Radio Stationでは皆様からのメッセージを随時お待ちしております。'
@@ -42,9 +43,10 @@ export default function Layout({ children, title, description }) {
       </Head>
       <div className={'l-container ' + layoutType}>
         <Header/>
-        <main>{children}</main>
+        <main className='l-main'>{children}</main>
         <Footer/>
       </div>
+      <PageTop/>
     </>
   )
 }
